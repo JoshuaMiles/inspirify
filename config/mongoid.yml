@@ -137,7 +137,6 @@ test:
         max_pool_size: 1
 
 production:
-  clients:
+  sessions:
     default:
-      database: inspirify
       uri: <%= ENV['MONGOLAB_URI'] %>
