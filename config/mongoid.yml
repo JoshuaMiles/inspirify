@@ -139,4 +139,5 @@ test:
 production:
   clients:
     default:
+      database: inspirify
       uri: <%= ENV['MONGOLAB_URI'] %>
