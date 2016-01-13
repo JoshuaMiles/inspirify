@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :adjectives
+  resources :phrases
+  resources :nouns
+  get 'admin/index'
+
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
