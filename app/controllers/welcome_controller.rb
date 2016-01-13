@@ -9,8 +9,8 @@ class WelcomeController < ApplicationController
         counts[word] += 1
       end
 
-    @noun_count = counts['#noun'] + 1
-    @adjective_count = counts['#adjective'] + 2
+    @noun_count = counts['#noun'] + 3
+    @adjective_count = counts['#adjective'] + 3
 
     @noun_array = Array.new(@noun_count)
     @noun_array.map! {
