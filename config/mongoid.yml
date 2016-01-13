@@ -139,4 +139,4 @@ test:
 production:
   clients:
     default:
-      uri: "mongodb://user:pass@host:port/db"
+      uri: <%= ENV['MONGOLAB_URI'] %>
