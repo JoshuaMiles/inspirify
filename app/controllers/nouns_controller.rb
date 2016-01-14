@@ -1,4 +1,4 @@
-class NounsController < ApplicationController
+class NounsController < AdminController
   before_action :set_noun, only: [:show, :edit, :update, :destroy]
 
   # GET /nouns

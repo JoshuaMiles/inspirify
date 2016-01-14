@@ -14,10 +14,12 @@
 </head>
 <body>
 <header>
-  <%= render('layouts/menu') %>
+  <%= render('layouts/admin_menu') %>
 </header>
+<div class="container">
+  <%= yield %>
+</div>
 
-<%= yield %>
 
 </body>
 </html>

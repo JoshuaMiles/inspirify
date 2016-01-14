@@ -1,4 +1,4 @@
-class AdjectivesController < ApplicationController
+class AdjectivesController < AdminController
   before_action :set_adjective, only: [:show, :edit, :update, :destroy]
 
   # GET /adjectives

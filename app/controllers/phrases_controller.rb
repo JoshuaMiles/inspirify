@@ -1,4 +1,4 @@
-class PhrasesController < ApplicationController
+class PhrasesController < AdminController
   before_action :set_phrase, only: [:show, :edit, :update, :destroy]
 
   # GET /phrases
