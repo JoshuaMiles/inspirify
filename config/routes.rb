@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :verbs
+  resources :verbs
+  resources :verbs
+  resources :verbs
   get 'instructions/index'
 
   resources :adjectives
