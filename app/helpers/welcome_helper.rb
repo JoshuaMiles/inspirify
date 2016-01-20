@@ -1,6 +1,27 @@
 module WelcomeHelper
   # noinspection RubyArgCount
   def self.generate_phrase
+    check_noun = Noun.first.noun rescue nil
+    check_adjective = Adjective.first.adjective rescue nil
+    check_verb = Verb.first.verb rescue nil
+    check_phrase = Phrase.first.phrase rescue nil
+
+    unless check_verb
+      return @new_phase = 'You are missing verbs! Fill up the database, via the Admin page!'
+    end
+
+    unless check_noun
+      return @new_phase = 'You are missing nouns! Fill up the database, via the Admin page!'
+    end
+
+    unless check_adjective
+      return @new_phase = 'You are missing adjectives! Fill up the database via the Admin page!'
+    end
+
+    unless check_phrase
+      return @new_phrase = 'You are missing phrases! Fill up the database via the Admin Page!'
+    end
+
     @temp_phrase = Phrase.skip(rand(Phrase.count)).first.phrase
     @new_phrase = @temp_phrase.dup
 
@@ -44,4 +65,5 @@ module WelcomeHelper
 
     return @new_phrase
   end
+
 end
